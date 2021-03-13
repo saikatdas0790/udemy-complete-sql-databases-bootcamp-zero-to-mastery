@@ -59,4 +59,4 @@ from "World".public.country;
 
 select avg(population)
 from city
-where countrycode = (select code from country where name = 'Netherlands');
+where countrycode = (select code from country where name = 'Netherlands' limit 1);
